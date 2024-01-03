@@ -36,9 +36,9 @@
     <h1>Primeiros passos com HTML</h1> <!-- <h1> é geralmente o cabeçalho mais importante e representa o título principal ou principal da página e 
                                             não pode ser repetido mais de uma vez. -->
     <br>
-    <p>HTML, que significa HyperText Markup Language, é a linguagem padrão para criar páginas da web. Ele fornece uma estrutura básica para o 
+    <p>HTML, que significa HyperText Markup Language, é a linguagem de marcação padrão para criar páginas da web. Ele fornece uma estrutura básica para o 
         conteúdo da web, indicando como o texto deve ser estruturado, quais imagens devem ser exibidas e como os links devem se comportar.</p>
-    <p>A estrutura básica de um documento HTML envolve o uso de várias tags que delimitam diferentes seções do conteúdo.</p>
+    <p>A estrutura básica de um documento HTML envolve o uso de várias  <abbr title="Marcação utilizada para definir e estruturar elementos na página web.">tags</abbr> que delimitam diferentes seções do conteúdo.</p>
     
     
     
@@ -51,62 +51,99 @@
 
 
 
-    <h2>Construindo um código HTML básico</h2>
+    <h2>Conhecendo como funcionam os códigos HTML</h2>
 
     <br>
     <!-- Essa tag <p></p> é usada para agrupar e formatar blocos de texto como parágrafos separados.-->
     <!-- Para otimizar a inserção de parágrafos, usa o comando p*x onde x é o numero de paragrafos a serem criados.-->
     <!-- 'p>lorem' esse comando vai inserir um texto em latim. É util para poder ter ideia de como aquele texto vai ficar no site.-->
-    <p>Para construir o código, é necessário que se faça o uso de tags. Em HTML, as "tags" são elementos fundamentais que permitem estruturar e 
-        formatar o conteúdo de uma página web. </p>
+    <p>Para construir o código, é necessário que se faça o uso de tags. Em HTML, as tags são elementos fundamentais que permitem estruturar e 
+            formatar o conteúdo de uma página web. </p>
     <p>As tags são cercadas por colchetes angulares "<code>&lt;tag&gt;</code>" para a abertura e "<code>&lt;/tag&gt;</code>"com a inclusão de "/" 
         para o fechamento.<!-- &lt; esse é o caractere '<'-->
         Cada tag tem uma função específica e contribui para a organização, definição de informações para o navegadpr e apresentação do conteúdo para o leitor.</p>
     
-    <p>Para inicio do código, é necessário informar ao navegador o tipo de docimento que será exibido. O "<code>&lt;!DOCTYPE html&gt;</code>" especifica 
-        que a página está usando HTML5, a versão mais recente e comum do HTML.</p>
-    
-    <p>Para que este código seja melhor entendido, é necessário a presença de comentários nele. Os comentários aparecem entre "<code>&lt;!--</code>" e "<code>--&gt;</code>".</p>
+    <p>Como primeiro site, vamos construir um conteúdo em texto sobre dicas de programação para iniciantes. Iremos fazer o uso de cabeçalhos, títulos, seções, subseções e parágrafos. </p>    
+
     <br>
 
+
+<!----------------------------------------------------------------------------------------------------------------------------->
+
+
     <h3>Iniciando...</h3>
+    <br>
+
+    <p>No inicio do código, é necessário informar ao navegador o tipo de docimento que será exibido. O "<code>&lt;!DOCTYPE html&gt;</code>" especifica 
+        que a página está usando HTML5, a versão mais recente e comum do HTML. Essa declaração é importante porque influencia o modo como o navegador renderiza o conteúdo da página. 
+        A especificação DOCTYPE ajuda a garantir que o navegador interprete o HTML corretamente, evitando comportamentos inesperados ou erros de renderização.</p>
+    
+    <p>Para que este código seja melhor entendido, é necessário a presença de <abbr title="Comentários em HTML são trechos de texto que não são exibidos na página, servindo para incluir anotações ou informações para os desenvolvedores.">comentários</abbr> nele. 
+        Os comentários aparecem entre "<code>&lt;!--</code>" e "<code>--&gt;</code>".</p>
+
     <br>
     <pre>&lt;!DOCTYPE html&gt; &lt;!-- Comunicando ao navegador que este arquivo é do tipo HTML. --&gt;</pre>
     <br>
 
 
-<!-- ------------------------------------------------------------------------------------------------------------------------- -->
+
+<!----------------------------------------------------------------------------------------------------------------------------->
 
 
 
     <h3>Todo o conteúdo HTML</h3>
-    <p>Todo o conteúdo HTML vai estar dentro da tag 'html'. Nesta tag, o atributo "lang" vai determinar a linguagem do site (o padrão é o Inglês). </p>
+    <br>
 
+    <p>Depois de iniciar o código informando ao navegador que o site vai estar seguindo os padrões do HTML5, todo o conteúdo da página HTML vai estar dentro da tag &lt;html&gt;. Nesta tag, o atributo "lang" vai determinar a linguagem do site (o padrão é o Inglês). </p>
+    <br>
 <pre>
 &lt;!DOCTYPE html&gt; &lt;!-- Comunica ao navegador que este arquivo é do tipo HTML. --&gt;
 
 &lt;html lang="pt-br"&gt; <code>&lt;!-- Esta nova tag significa que todo o conteúdo do site HTML vai estar dentro dessa tag. --&gt;</code>
-                    &lt;!-- Atributo "lang" configurado para o português. -- &gt;
-<html lang="pt-br"> 
-</pre>
+                    &lt;!-- Atributo "lang" configurado para o português. --&gt;
+                    
+                    &lt;!-- ----- Código -----  --&gt;
+                    &lt;!-- ----- Código -----  --&gt;
+                    &lt;!-- ----- Código -----  --&gt;
+                    &lt;!-- ----- Código -----  --&gt;
+                    &lt;!-- ----- Código -----  --&gt;
 
+&lt;/html&gt;
+</pre><br>
+
+<p>Para não ficar com trechos muito grades de código, irei escrever e explicar cada parte do código de forma separada. O código completo estará disponível ao final do conteúdo.</p><br>
 
 <!-- ------------------------------------------------------------------------------------------------------------------------- -->
 
+<h3>Você não vê a cabeça...</h3><br>
 
 
-
-
-<h3>Todo o conteúdo HTML</h3>
-<p>Todo o conteúdo HTML vai estar dentro da tag 'html'. Nesta tag, o atributo "lang" vai determinar a linguagem do site (o padrão é o Inglês). </p>
+<p>Um pequeno trocadilho com o &lt;head&gt;. Nele, serão inseridas as informações lidas pelo navegador.</p>
 
 <pre>
-&lt;!DOCTYPE html&gt; &lt;!-- Comunica ao navegador que este arquivo é do tipo HTML. --&gt;
+&lt;head&gt; &lt;!-- Tudo dentro desta tag compõe o cabeçalho da página, não visível para o usuário. --&gt;
 
-&lt;html lang="pt-br"&gt; <code>&lt;!-- Esta nova tag significa que todo o conteúdo do site HTML vai estar dentro dessa tag. --&gt;</code>
-                &lt;!-- Atributo "lang" configurado para o português. -- &gt;
-<html lang="pt-br"> 
+    &lt;!-- Meta tags contêm informações lidas pelo navegador, essenciais para o funcionamento e apresentação da página. --&gt;
+
+    &lt;meta charset="UTF-8"&gt; &lt;!-- Garante compatibilidade com a língua portuguesa, evitando problemas de acentuação. --&gt;
+    
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; &lt;!-- Define a adaptação do conteúdo à tela e o zoom. --&gt;
+    
+    &lt;meta name="description" content="Meu primeiro site!"&gt; &lt;!-- Descrição do site, semelhante a uma sinopse. --&gt;
+    
+    &lt;meta name="keywords" content="primeirosite,html,css,js,programação,front-end"&gt; &lt;!-- Palavras-chave para busca e ranqueamento. --&gt;
+    
+    &lt;meta name="author" content="Fabinho Farias"&gt; &lt;!-- Nome do autor do site. --&gt;
+    
+    &lt;meta name="co-author" content="Outro Autor"&gt; &lt;!-- Nome do co-autor do site. --&gt;
+    
+    &lt;title&gt;Meu primeiro site&lt;/title&gt; &lt;!-- Título da página exibido na barra do navegador. --&gt;
+
+&lt;/head&gt; &lt;!-- Fim do cabeçalho. --&gt;
+
 </pre>
+
+
 
 
 <br>
@@ -144,53 +181,8 @@
 
 
 
-<h2>CODIGO 1</h2>
-
-<br>
-<pre>&lt;!DOCTYPE html&gt; &lt;!-- Comunica ao navegador que este arquivo é do tipo HTML. --&gt;</pre>
-<br>
-
-<h2>CODIGO 2</h2>
-
-<pre>
-&lt;!DOCTYPE html&gt; &lt;!-- Comunica ao navegador que este arquivo é do tipo HTML. --&gt;
-
-&lt;html lang="pt-br"&gt; <code>&lt;!-- Esta nova tag significa que todo o conteúdo do site HTML vai estar dentro dessa tag. --&gt;</code>
-                    &lt;!-- Esse atributo "lang" é responsável por dizer a linguagem do site ao navegador. O padrão dele é inglês --&gt;
-<html lang="pt-br"> 
-
-&lt;/html&gt;
-</pre>
 
 
-
-<h2>CODIGO 3</h2>
-
-
-<pre> &lt;head&gt; &lt;!-- Esta nova tag significa que é a cabeça. Tudo dentro dessa tag não vai ser mostrado para o usuário. --&gt;
-        &lt;!-- Essas meta tags contêm informações lidas pelo navegador.
-        &lt;!-- Dentro das meta tags são inseridas alguns tipos de informações importantes.--&gt;
-
-    &lt;meta charset="UTF-8"&gt; &lt;!-- Esta meta tag serve para dizer que o documento vai ter compatibilidade com a língua portuguesa, por exemplo. Evita problema de acentuação. --&gt;
-    
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; &lt;!-- Esta meta tag name="viewport" significa a área visível do
-    usuário da página. content="width=device-width, initial-scale=1.0" quer dizer que o conteúdo da tela vai se adaptar ao conteúdo da tela
-    e define que o zoom vai se adaptar à tela. --&gt;
-    
-    &lt;meta name="description" content="Meu primeiro site!"&gt; &lt;!-- Esta vai ser uma descrição do que vai ser meu site. Meio que uma sinopse. --&gt;
-    
-    &lt;meta name="keywords" content="primeirosite,html,css,js,programação,front-end"&gt; &lt;!-- Esta vai dar algumas palavras-chave do conteúdo da
-    página para facilitar a busca e o ranqueamento do site pelos navegadores. --&gt;
-    
-    &lt;meta name="author" content="Fabinho Farias"&gt; &lt;!-- Nome do autor do site --&gt;
-    
-    &lt;meta name="co-author" content="Outro Autor"&gt; &lt;!-- Nome do co-autor do site --&gt;
-    
-    &lt;title&gt;Meu primeiro site&lt;/title&gt;
-
-&lt;/head&gt; &lt;!-- Fim da cabeça. Tudo dentro desta tag é parte do cabeçalho da página.
-
-<pre!>
 
 
 
