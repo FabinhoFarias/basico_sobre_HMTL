@@ -36,33 +36,36 @@
     <h1>Primeiros passos com HTML</h1> <!-- <h1> é geralmente o cabeçalho mais importante e representa o título principal ou principal da página e 
                                             não pode ser repetido mais de uma vez. -->
     <br>
-    <p>HTML, que significa HyperText Markup Language, é a linguagem de marcação padrão para criar páginas da web. Ele fornece uma estrutura básica para o 
-        conteúdo da web, indicando como o texto deve ser estruturado, quais imagens devem ser exibidas e como os links devem se comportar.</p>
-    <p>A estrutura básica de um documento HTML envolve o uso de várias  <abbr title="Marcação utilizada para definir e estruturar elementos na página web.">tags</abbr> que delimitam diferentes seções do conteúdo.</p>
-    
-    
-    
-    
-    
-    <br>
-
+    <p>Ao entrar no mundo da programação, uma das primeiras decisões importantes é escolher a ferramenta certa para escrever, testar e depurar o código.    
+    É aqui que as <abbr title="Ambientes de Desenvolvimento Integrado.">IDEs</abbr> desempenham um papel crucial, proporcionando um ambiente unificado 
+    que simplifica o processo de desenvolvimento. Para a produção desse conteúdo, a IDE escolhida foi o Visual Studio Code. Aqui você encontra um tutorial 
+    de como instalar e configurar o VSCode, como é chamado, mas pode usar qualquer outra IDE que suporte o HTML5. Basta copiar e colar os códigos que estarão 
+    aqui que a saída será a mesma.</p>
+    <p><a href="https://www.youtube.com/watch?v=uxln1hT_Ev4" target="_blank">CLIQUE AQUI</a> para instalar o VSCode !</p><bt></bt>
 
 <!-- ------------------------------------------------------------------------------------------------------------------------- -->
 
+    <h2>O que é o HTML?</h2><br>
+    <p>HTML, que significa HyperText Markup Language, é a linguagem de marcação padrão para criar páginas da web. Ele fornece uma estrutura básica para o 
+        conteúdo da web, indicando como o texto deve ser estruturado, quais imagens devem ser exibidas e como os links devem se comportar.</p>
+    <p>A estrutura básica de um documento HTML envolve o uso de várias <abbr title="Marcação utilizada para definir e estruturar elementos na página web.">tags</abbr> 
+        que delimitam diferentes seções do conteúdo.</p>
+    <br>
 
+<!-- ------------------------------------------------------------------------------------------------------------------------- -->
 
     <h2>Conhecendo como funcionam os códigos HTML</h2>
 
     <br>
-    <!-- Essa tag <p></p> é usada para agrupar e formatar blocos de texto como parágrafos separados.-->
-    <!-- Para otimizar a inserção de parágrafos, usa o comando p*x onde x é o numero de paragrafos a serem criados.-->
-    <!-- 'p>lorem' esse comando vai inserir um texto em latim. É util para poder ter ideia de como aquele texto vai ficar no site.-->
-    <p>Para construir o código, é necessário que se faça o uso de tags. Em HTML, as tags são elementos fundamentais que permitem estruturar e 
-            formatar o conteúdo de uma página web. </p>
-    <p>As tags são cercadas por colchetes angulares "<code>&lt;tag&gt;</code>" para a abertura e "<code>&lt;/tag&gt;</code>"com a inclusão de "/" 
-        para o fechamento.<!-- &lt; esse é o caractere '<'-->
-        Cada tag tem uma função específica e contribui para a organização, definição de informações para o navegadpr e apresentação do conteúdo para o leitor.</p>
-    
+    <!-- A tag <p></p> é usada para agrupar e formatar blocos de texto como parágrafos separados. -->
+    <!-- Para otimizar a inserção de parágrafos, use o comando p*x onde x é o número de parágrafos a serem criados. -->
+    <!-- 'p>lorem' esse comando vai inserir um texto em latim. É útil para poder ter ideia de como aquele texto vai ficar no site. -->
+    <p>Para construir o código, é necessário fazer o uso de tags. Em HTML, as tags são elementos fundamentais que permitem estruturar e 
+        formatar o conteúdo de uma página web. </p>
+    <p>As tags são cercadas por colchetes angulares "<code>&lt;tag&gt;</code>" para a abertura e "<code>&lt;/tag&gt;</code>" com a inclusão de "/" 
+        para o fechamento. <!-- &lt; esse é o caractere '<' -->
+        Cada tag tem uma função específica e contribui para a organização, definição de informações para o navegador e apresentação do conteúdo para o leitor.</p>
+
     <p>Como primeiro site, vamos construir um conteúdo em texto sobre dicas de programação para iniciantes. Iremos fazer o uso de cabeçalhos, títulos, seções, subseções e parágrafos. </p>    
 
     <br>
@@ -70,33 +73,30 @@
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 
-
     <h3>Iniciando...</h3>
     <br>
 
-    <p>No inicio do código, é necessário informar ao navegador o tipo de docimento que será exibido. O "<code>&lt;!DOCTYPE html&gt;</code>" especifica 
+    <p>No início do código, é necessário informar ao navegador o tipo de documento que será exibido. O "<code>&lt;!DOCTYPE html&gt;</code>" especifica 
         que a página está usando HTML5, a versão mais recente e comum do HTML. Essa declaração é importante porque influencia o modo como o navegador renderiza o conteúdo da página. 
         A especificação DOCTYPE ajuda a garantir que o navegador interprete o HTML corretamente, evitando comportamentos inesperados ou erros de renderização.</p>
-    
+
     <p>Para que este código seja melhor entendido, é necessário a presença de <abbr title="Comentários em HTML são trechos de texto que não são exibidos na página, servindo para incluir anotações ou informações para os desenvolvedores.">comentários</abbr> nele. 
         Os comentários aparecem entre "<code>&lt;!--</code>" e "<code>--&gt;</code>".</p>
 
     <br>
-    <pre>&lt;!DOCTYPE html&gt; &lt;!-- Comunicando ao navegador que este arquivo é do tipo HTML. --&gt;</pre>
+    <pre><code>&lt;!DOCTYPE html&gt; &lt;!-- Comunicando ao navegador que este arquivo é do tipo HTML. --&gt;</code></pre>
     <br>
-
 
 
 <!----------------------------------------------------------------------------------------------------------------------------->
 
+<h3>Todo o conteúdo HTML</h3>
+<br>
 
+<p>Após iniciar o código informando ao navegador que o site estará aderindo aos padrões do HTML5, todo o conteúdo da página HTML será encontrado dentro da tag &lt;html&gt;. Nesta tag, o atributo "lang" determinará a linguagem do site (o padrão é o Inglês).</p>
+<br>
 
-    <h3>Todo o conteúdo HTML</h3>
-    <br>
-
-    <p>Depois de iniciar o código informando ao navegador que o site vai estar seguindo os padrões do HTML5, todo o conteúdo da página HTML vai estar dentro da tag &lt;html&gt;. Nesta tag, o atributo "lang" vai determinar a linguagem do site (o padrão é o Inglês). </p>
-    <br>
-<pre>
+<pre><code>
 &lt;!DOCTYPE html&gt; &lt;!-- Comunica ao navegador que este arquivo é do tipo HTML. --&gt;
 
 &lt;html lang="pt-br"&gt; <code>&lt;!-- Esta nova tag significa que todo o conteúdo do site HTML vai estar dentro dessa tag. --&gt;</code>
@@ -109,18 +109,28 @@
                     &lt;!-- ----- Código -----  --&gt;
 
 &lt;/html&gt;
-</pre><br>
+</code></pre><br>
 
-<p>Para não ficar com trechos muito grades de código, irei escrever e explicar cada parte do código de forma separada. O código completo estará disponível ao final do conteúdo.</p><br>
+<p>Para não deixar trechos muito extensos, irei escrever e explicar cada parte do código separadamente. O código completo estará disponível ao final do conteúdo.</p><br>
 
 <!-- ------------------------------------------------------------------------------------------------------------------------- -->
 
 <h3>Você não vê a cabeça...</h3><br>
 
 
-<p>Um pequeno trocadilho com o &lt;head&gt;. Nele, serão inseridas as informações lidas pelo navegador.</p>
+<p>Um pequeno trocadilho com o &lt;head&gt;. Nele, a mágica acontece nos bastidores, pois as informações armazenadas não são mostradas pelo navegador. Este componente do HTML é como o cérebro da página, 
+    onde informações cruciais são armazenadas em <abbr title="As meta tags são elementos HTML que fornecem informações sobre um documento. Essas tags são lidas pelos navegadores e motores de busca, contribuindo para a apresentação e indexação adequadas da página na web.">meta tags</abbr>. 
+    Essas meta tags, como artistas nos bastidores de um espetáculo, desempenham papéis específicos: o charset garante que a língua portuguesa seja interpretada corretamente, 
+    o viewport define a adaptabilidade à tela, a descrição fornece uma sinopse para os motores de busca, as palavras-chave facilitam a indexação, e o autor revela os mentores por trás da cortina. 
+    Apesar de invisível, o &lt;head&gt; é a chave para uma experiência de usuário e otimização eficientes.</p>
 
-<pre>
+<pre><code>
+
+&lt;!-- ----- Código anterior -----  --&gt;
+&lt;!-- ----- Código anterior -----  --&gt;
+&lt;!-- ----- Código anterior -----  --&gt;
+
+
 &lt;head&gt; &lt;!-- Tudo dentro desta tag compõe o cabeçalho da página, não visível para o usuário. --&gt;
 
     &lt;!-- Meta tags contêm informações lidas pelo navegador, essenciais para o funcionamento e apresentação da página. --&gt;
@@ -141,222 +151,60 @@
 
 &lt;/head&gt; &lt;!-- Fim do cabeçalho. --&gt;
 
+&lt;!-- ----- Código posterior -----  --&gt;</code>
+&lt;!-- ----- Código posterior -----  --&gt;</code>
+&lt;!-- ----- Código posterior -----  --&gt;</code>
+
 </pre>
 
+<!-- ------------------------------------------------------------------------------------------------------------------------- -->
 
+<h3>Quase tudo está no corpo !</h3><br>
 
+<p>Antes, quase tudo que estava no &lt;head&gt; do código só servia para o navegador. No &lt;body&gt;, estão inseridas as informações que você quer que sejam mostradas no seu site.
+    Nas tags do &lt;body&gt;, serão, basicamente, elementos visuais. Por exemplo: tudo que você leu até agora deste site está contido dentro da tag &lt;body&gt; 
+    do conteúdo HTML desta página. Mas não apenas os textos, como também estão presentes imagens, cores, espaçamentos, links e outros elementos. Apenas um pequeno parêntese: o HTML é uma ferramenta
+    para estruturar o site e não para deixá-lo bonito. Essa tarefa é do <abbr title="
+    CSS, que significa Cascading Style Sheets (Folhas de Estilo em Cascata), é uma linguagem de estilo utilizada para controlar a apresentação visual de documentos HTML. 
+    Ele define a aparência e o layout de elementos na página web, permitindo a separação entre conteúdo e design.">CSS</abbr>.</p>
+
+<p>Várias tags foram usadas neste site, mas na estrutura dos textos as duas abaixo são as principais:<br>
+    <code>&lt;h1&gt;</code> até <code>&lt;h6&gt;</code>: São tags de cabeçalho que definem títulos ou cabeçalhos, sendo <code>&lt;h1&gt;</code> o mais importante e <code>&lt;h6&gt;</code> o menos. 
+    É importante que haja apenas uma tag <code>&lt;h1&gt;</code>, que será o conteúdo principal do seu site, mas também é crucial que as outras tags não sejam usadas para estilizar o site.
+<br><code>&lt;p&gt;</code>: Utilizada para criar parágrafos de texto.</p>
+<p>Como os códigos de exemplo estão contribuindo para um site de dicas de programação, observe que dentro das tags de títulos estarão os tópicos da página e nas tags de parágrafo estará o conteúdo.</p><br>
+
+<pre>
+<code>&lt;body&gt;
+
+    &lt;h1&gt;Dicas para Iniciantes em Programação.&lt;/h1&gt;
+
+        &lt;h2&gt;1. Escolha da Linguagem de Programação&lt;/h2&gt;
+            &lt;p&gt;Para começar, escolha uma linguagem de programação adequada para iniciantes, como Python, JavaScript ou Ruby. Cada linguagem tem suas próprias características, mas é importante começar com algo acessível.&lt;/p&gt;
+
+        &lt;h2&gt;2. Prática Regular&lt;/h2&gt;
+            &lt;p&gt;A prática regular é fundamental. Dedique algum tempo todos os dias para escrever código. Quanto mais você pratica, mais confortável e proficiente se torna.&lt;/p&gt;
+
+        &lt;h2&gt;3. Faça Pequenos Projetos&lt;/h2&gt;
+            &lt;p&gt;Comece com pequenos projetos para aplicar o que aprendeu. Isso ajuda a consolidar seus conhecimentos e a construir confiança.&lt;/p&gt;
+
+        &lt;h2&gt;4. Busque Recursos Online&lt;/h2&gt;
+            &lt;p&gt;A internet é uma fonte rica de recursos para aprendizado. Utilize tutoriais, cursos online e comunidades de programadores para expandir seu conhecimento.&lt;/p&gt;
+
+        &lt;h2&gt;5. Não Tenha Medo de Errar&lt;/h2&gt;
+            &lt;p&gt;Erros são parte do phrocesso de aprendizado. Não tenha medo de cometer erros, pois são oportunidades de aprendizado. Analise os erros, corrija e siga em frente.&lt;/p&gt;
+
+    &lt;/body&gt;
+&lt;/html&gt;
+</code>
+</pre>
+
+<p><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element" target="_blank">Link</a> para uma documentação do html;<br>
+<a href="site_exemplo.html" target="_blank">Site exemplo!</a>
 
 <br>
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
-    <p>     &lt;!-- COMENTARIO --&gt; <!-- <code>&lt;!-- COMENTARIO --&gt;</code> -->
-            <br>
-            &lt;TAG&gt; CODIGO &lt;/TAG&gt;<!-- <code>&lt;TAG&gt; CODIGO &lt;/html&gt;</code> -->
-    </p>    
-    
-    
-
-    
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+<a href="codigo_primeiroSite.html" target="_blank">Código completo do site!</a>
+<br></p>
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h2>CODIGO 4</h2>
-
-
-
-
-<h2>CODIGO 5</h2>
-
-<pre>
-<code></code>&lt;/body&gt;</code> <!-- O conteúdo dentro da tag &lt;body&gt; é o que os usuários veem quando visitam uma página web. -->
-
-    <!-- A letra "h" representa "header" em inglês, que traduzido para o português significa "cabeçalho". -->
-    <!-- Esse recurso serve para dar ordem de importância ao texto. -->
-    <!-- Cada cabeçalho serve para estruturar e organizar o texto para quem está lendo. -->
-    <!-- Cabeçalhos não são usados por conta do tamanho da letra ou para deixar em negrito. -->   
-
-    &lt;h1&gt;Primeiros passos com HTML&lt;/h1&gt; <!-- &lt;h1&gt; é geralmente o cabeçalho mais importante e representa o título principal ou principal da página e 
-                                            não pode ser repetido mais de uma vez. -->
-    &lt;br&gt;
-    &lt;p&gt;HTML, que significa HyperText Markup Language, é a linguagem padrão para criar páginas da web. Ele fornece uma estrutura básica para o 
-        conteúdo da web, indicando como o texto deve ser estruturado, quais imagens devem ser exibidas e como os links devem se comportar.&lt;/p&gt;
-    &lt;p&gt;A estrutura básica de um documento HTML envolve o uso de várias tags que delimitam diferentes seções do conteúdo.&lt;/p&gt;
-    
-    &lt;h2&gt;Tags HTML Básicas&lt;/h2&gt;
-    &lt;p&gt;Existem várias tags HTML básicas que você pode usar para estruturar o conteúdo da sua página. Algumas delas incluem:&lt;/p&gt;
-    &lt;ul&gt;
-        &lt;li&gt;&lt;code&gt;&amp;lt;h1&amp;gt; a &amp;lt;h6&amp;gt;&lt;/code&gt;: Cabeçalhos de diferentes níveis.&lt;/li&gt;
-        &lt;li&gt;&lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt;: Parágrafos de texto.&lt;/li&gt;
-        &lt;li&gt;&lt;code&gt;&amp;lt;br&amp;gt;&lt;/code&gt;: Quebra de linha.&lt;/li&gt;
-        &lt;li&gt;&lt;code&gt;&amp;lt;ul&amp;gt;&lt;/code&gt; e &lt;code&gt;&amp;lt;ol&amp;gt;&lt;/code&gt;: Listas não ordenadas e ordenadas.&lt;/li&gt;
-        &lt;li&gt;&lt;code&gt;&amp;lt;li&amp;gt;&lt;/code&gt;: Itens de lista.&lt;/li&gt;
-    &lt;/ul&gt;
-
-    &lt;h2&gt;Próximos Passos&lt;/h2&gt;
-    &lt;p&gt;Agora que você aprendeu os primeiros passos com HTML, você pode explorar mais recursos, como:&lt;/p&gt;
-    &lt;ul&gt;
-        &lt;li&gt;Adição de imagens com a tag &lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt;.&lt;/li&gt;
-        &lt;li&gt;Criação de links com a tag &lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt;.&lt;/li&gt;
-        &lt;li&gt;Estilização usando folhas de estilo CSS.&lt;/li&gt;
-        &lt;li&gt;Integração de scripts com JavaScript.&lt;/li&gt;
-    &lt;/ul&gt;
-
-<code></code>&lt;/body&gt;</code>
-</pre>
-
-<h2>CODIGO 6</h2>
-&lt;p&gt;lembrar de corrigir os codigos ao final para ficar mais correto.&lt;/p&gt;
-
-<h2>CODIGO 7</h2>
-
-<!--<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dicas para Iniciantes em Programação</title>
-</head>
- -->
-
-<body>
-    <header>
-        <h1>Dicas para Iniciantes em Programação. Site para exemplificar.</h1>
-    </header>
-
-    <section>
-        <h2>1. Escolha da Linguagem de Programação</h2>
-        <p>Para começar, escolha uma linguagem de programação adequada para iniciantes, como Python, JavaScript ou Ruby. Cada linguagem tem suas próprias características, mas é importante começar com algo acessível.</p>
-    </section>
-
-    <section>
-        <h2>2. Prática Regular</h2>
-        <p>A prática regular é fundamental. Dedique algum tempo todos os dias para escrever código. Quanto mais você pratica, mais confortável e proficiente se torna.</p>
-    </section>
-
-    <section>
-        <h2>3. Faça Pequenos Projetos</h2>
-        <p>Comece com pequenos projetos para aplicar o que aprendeu. Isso ajuda a consolidar seus conhecimentos e a construir confiança.</p>
-    </section>
-
-    <section>
-        <h2>4. Busque Recursos Online</h2>
-        <p>A internet é uma fonte rica de recursos para aprendizado. Utilize tutoriais, cursos online e comunidades de programadores para expandir seu conhecimento.</p>
-    </section>
-
-    <section>
-        <h2>5. Não Tenha Medo de Errar</h2>
-        <p>Erros são parte do processo de aprendizado. Não tenha medo de cometer erros, pois são oportunidades de aprendizado. Analise os erros, corrija e siga em frente.</p>
-    </section>
-
-    <footer>
-        <p>Estas são apenas algumas dicas básicas para quem está começando no mundo da programação. Lembre-se, a jornada de aprendizado é única para cada pessoa, então vá no seu próprio ritmo e aproveite o processo!</p>
-    </footer>
-
-<h2>CODIGO 8</h2>
-
-<!--
-<pre>
-&lt;!DOCTYPE html&gt; &lt;!-- Comunica ao navegador que este arquivo é do tipo HTML. --&gt;
-    
-&lt;html lang="pt-br"&gt; <code>&lt;!-- Esta nova tag significa que todo o conteúdo do site HTML vai estar dentro dessa tag. --&gt;</code>
-                        &lt;!-- Esse atributo "lang" é responsável por dizer a linguagem do site ao navegador. O padrão dele é inglês -- &gt;
-<html lang="pt-br"> 
-</pre>
--->
-
-<h2>CODIGO 9</h2>
-
-<!--
-<pre>
-&lt;!DOCTYPE html&gt; &lt;!-- Comunica ao navegador que este arquivo é do tipo HTML. --&gt;
-    
-&lt;html lang="pt-br"&gt; <code>&lt;!-- Esta nova tag significa que todo o conteúdo do site HTML vai estar dentro dessa tag. --&gt;</code>
-                        &lt;!-- Esse atributo "lang" é responsável por dizer a linguagem do site ao navegador. O padrão dele é inglês -- &gt;
-<html lang="pt-br"> 
-</pre>
--->
-
-<h2>CODIGO 10</h2>
-
-<!--
-<pre>
-&lt;!DOCTYPE html&gt; &lt;!-- Comunica ao navegador que este arquivo é do tipo HTML. --&gt;
-    
-&lt;html lang="pt-br"&gt; <code>&lt;!-- Esta nova tag significa que todo o conteúdo do site HTML vai estar dentro dessa tag. --&gt;</code>
-                        &lt;!-- Esse atributo "lang" é responsável por dizer a linguagem do site ao navegador. O padrão dele é inglês -- &gt;
-<html lang="pt-br"> 
-</pre>
--->
-
-<h2>CODIGO 11</h2>
-
-<!--
-<pre>
-&lt;!DOCTYPE html&gt; &lt;!-- Comunica ao navegador que este arquivo é do tipo HTML. --&gt;
-    
-&lt;html lang="pt-br"&gt; <code>&lt;!-- Esta nova tag significa que todo o conteúdo do site HTML vai estar dentro dessa tag. --&gt;</code>
-                        &lt;!-- Esse atributo "lang" é responsável por dizer a linguagem do site ao navegador. O padrão dele é inglês -- &gt;
-<html lang="pt-br"> 
-</pre>
--->
-
-
-
-<h2>Formatação de texto</h2>
-
-
-<b>kbx</b> - Negrito
-<strong>Texto em negrito</strong> - Negrito (ênfase)
-<i>Texto em itálico</i> - Itálico
-<u>Texto sublinhado</u> - Sublinhado
-<hr> - Linha de divisão
-<br> - Pular uma linha (quebra de linha)
-<small>Texto pequeno</small> - Texto pequeno
-<del>Texto riscado</del> - Riscado (deletado)
-<sup>Texto superior</sup> - Superior (por exemplo, número exponencial)
-<sub>Texto inferior</sub> - Inferior
-<mark>Texto destacado</mark> - Marcação (destaca texto)
-
-
-<h2>ELEMENTOS DE CITAÇÃO</h2>
-
-
-<h2>Anotações</h2>
-<p>colocar o significado de renderização depois</p>
-<p>crtl + k + c = trecho de código inteiro comentado</p>
-
-
-
-
-</body>
-
-</html>
-
-
