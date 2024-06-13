@@ -1,0 +1,123 @@
+/* Estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.144);
+    height: 100vh;
+    margin: 0;
+}
+
+.container-info {
+    margin: auto;
+    min-height: 500px;
+    height: auto;
+    width: 400px;
+    background-image: linear-gradient( to left, #db1e2ee1, rgba(255, 0, 0, 0.822) );
+    border-radius: 60px;
+    object-fit: contain;
+    flex-wrap: wrap;
+}
+
+#Calculadora{
+    display: block;
+    color:#fff;
+    font-size: 50px;
+    margin-top: 70px;
+    margin-left: 75px;
+}
+
+.Legenda{
+    color: #ffffffdc;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-left: 64px;
+}
+
+.email{
+    margin-top: 40px;
+}
+
+.nome {
+    font-family: 'Garamond', serif;
+    font-size: 5vh;
+    color: black(0, 0, 255, 0.9);
+}
+
+#primeiro_input, #segundo_input {
+    padding: 20px;
+    font-size: 15px; 
+    color: rgb(255, 255, 255);
+    width: 300px;
+    height: 20px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+#Email{
+    margin-top: 10px;
+}
+
+#Senha{
+    margin-bottom: 50px;
+}
+
+.Operacao {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 30px; 
+    color: rgb(255, 255, 255);
+    width: 150px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    margin-left: 125px;
+}
+
+.Operacao:hover {
+    scale: 1.02;
+    transition: all .3s ease-in;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.911);
+}
+
+.Conjunto_botoes{
+    align-items: center;
+    margin: auto;
+    display: none;
+    height: 200px;
+    width: 110px;
+    object-fit: contain;
+    flex-wrap: wrap;
+    gap: 10px
+}
+
+.Info{
+    color: #ffffffdc;
+    font-size: 25px;
+}
+
+.botao_operacao{
+    padding: 4px;
+    text-decoration: none;
+    font-size: 30px; 
+    color: rgb(255, 255, 255);
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+}
+
+/* Media Screen para telas menores */
+@media screen and (max-width: 401px) 
+{
+    .container-info {
+        border-radius: 2px;
+    }
+}

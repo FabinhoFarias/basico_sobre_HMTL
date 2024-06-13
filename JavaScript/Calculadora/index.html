@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Garamond&display=swap">
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container-info">
+        <p id="Calculadora">Calculadora</p>
+        
+        <p class="Legenda email">Digite um Número</p>
+        <input type="number" id="primeiro_input">
+        
+        <button class="Operacao">Operacao</button>
+            
+        <div class="Conjunto_botoes">
+            <p class="Info">Selecione:</p>
+            <button class="botao_operacao soma">+</button>
+            <button class="botao_operacao sub">-</button>
+            <button class="botao_operacao multi">x</button>
+            <button class="botao_operacao divisao">:</button>
+            <button class="botao_operacao poten">e^</button>
+            <button class="botao_operacao fatorial">!</button>
+        </div>
+
+        <p class="Legenda">Digite outro Número</p>
+        <input type="number" id="segundo_input">
+        <button class="Operacao" onclick="executarOperacao()">Calcular</button>
+       
+    </div>
+    
+    <script>
+        // Funções para realizar as operações
+        function Soma(n1, n2) {
+            return n1 + n2;
+        }
+
+        function Subtracao(n1, n2) {
+            return n1 - n2;
+        }
+
+        function Multiplicacao(n1, n2) {
+            return n1 * n2;
+        }
+
+        function Divisao(n1, n2) {
+            if (n2 !== 0) {
+                return n1 / n2;
+            } else {
+                return 'Erro: Divisão por zero';
+            }
+        }
+
+        function Potencia(n1, n2) {
+            return Math.pow(n1, n2);
+        }
+
+        function Fatorial(n) {
+            if (n === 0) {
+                return 1;
+            } else {
+                return n * Fatorial(n - 1);
+            }
+        }
+
+        // Função para guardar valores e exibir os botões de operação
+        function executarOperacao() {
+            var n1 = parseFloat(document.getElementById('primeiro_input').value);
+            var n2 = parseFloat(document.getElementById('segundo_input').value);
+
+            var operacaoSelecionada = document.querySelector('.Operacao').innerText.trim(); // Obter texto do botão
+            var resultado = 0;
+
+            switch (operacaoSelecionada) {
+                case '+':
+                    resultado = Soma(n1, n2);
+                    break;
+                case '-':
+                    resultado = Subtracao(n1, n2);
+                    break;
+                case 'x':
+                    resultado = Multiplicacao(n1, n2);
+                    break;
+                case ':':
+                    resultado = Divisao(n1, n2);
+                    break;
+                case 'e^':
+                    resultado = Potencia(n1, n2);
+                    break;
+                case '!':
+                    resultado = Fatorial(n1);
+                    break;
+                default:
+                    console.log('Operação não reconhecida');
+                    break;
+            }
+
+            console.log('Resultado:', resultado);
+        }
+
+        // Mostrar os botões de operação ao clicar no botão "Operacao"
+        var operacaoButton = document.querySelector('.Operacao');
+        operacaoButton.addEventListener('click', function() {
+            var botoes = document.querySelector('.Conjunto_botoes');
+            botoes.style.display = 'flex'; // Mostra os botões
+        });
+    </script> 
+</body>
+</html>
